@@ -46,6 +46,7 @@ namespace Snake201806.Model
                     //elindítjuk a játékot: eltüntetjük a játékszabályokat
                     View.GamePlayTextBlock.Visibility = System.Windows.Visibility.Hidden;
                     View.NumberOfMealsTextBlock.Visibility = System.Windows.Visibility.Visible;
+                    View.ArenaGrid.Visibility = System.Windows.Visibility.Visible;
                     Console.WriteLine(e.Key);
                     break;
             }
