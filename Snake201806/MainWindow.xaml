@@ -16,5 +16,16 @@
             A játék indításához a nyílgombok valamelyikével 
             el kell indítani a kígyó fejét
         </TextBlock>
+        <TextBlock x:Name="NumberOfMealsTextBlock"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="120" 
+                   FontWeight="Bold"
+                   Foreground="Gray"
+                   Text="0"
+                   Visibility="Hidden"
+                   />
+
+
     </Grid>
 </Window>

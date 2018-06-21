@@ -45,6 +45,7 @@ namespace Snake201806.Model
                 case Key.Down:
                     //elindítjuk a játékot: eltüntetjük a játékszabályokat
                     View.GamePlayTextBlock.Visibility = System.Windows.Visibility.Hidden;
+                    View.NumberOfMealsTextBlock.Visibility = System.Windows.Visibility.Visible;
                     Console.WriteLine(e.Key);
                     break;
             }
