@@ -125,12 +125,12 @@ Az alkalmazásunk felépítése a következõ lesz:
 ```
 
 ### 1. feladat
-- [ ] elkészíteni a képernyõt (View: MainWindows.xaml)
+- [X] elkészíteni a képernyõt (View: MainWindows.xaml)
   - [ ] tudnia kell megjeleníteni a kígyó fejét
   - [ ] tudnia kell megjeleníteni a játékszabályokat
-  - [ ] tudnia kell elkapni a felhasználó vezérlõparancsait (billentyûleütések), és továbbítni a Model felé.
-- [ ] elkészíteni az alkalmazáslogikát (Model)
-  - [ ] tudnia kell átvenni a billentyûparancsokat
+  - [X] tudnia kell elkapni a felhasználó vezérlõparancsait (billentyûleütések), és továbbítni a Model felé.
+- [X] elkészíteni az alkalmazáslogikát (Model)
+  - [X] tudnia kell átvenni a billentyûparancsokat
   - [ ] tudnia kell elindítani a játékmenetet 
 - [ ] ezt a két réteget összekötni
 
