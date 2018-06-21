@@ -30,7 +30,20 @@ namespace Snake201806.Model
 
             //A játék kezdetén megjelenítjük a játékszabályokat
             //Az osztályon belül a thid használata nem kötelező
-            View.GamePlayTextBlock.Visibility = System.Windows.Visibility.Visible;
+            View.GamePlayBorder.Visibility = System.Windows.Visibility.Visible;
+
+            //Kígyófej megjelenítése Circle ikonnal
+            //A grid az általa tartalmazott elemeket egy gyűjteményen keresztül teszi elérhetővé
+            //ez a gyűjtemény a Children
+            //a gyűjtemény egy felsorolás, ahol az első elm a 0. indexő, a második az 1. indexű, és így tovább.
+            //a 10. sor 10. elemét tehát így tudjuk elkérni a gyűjteménytől
+            var cell = View.ArenaGrid.Children[10 * 20 + 10];
+            //viszont ez egy általános IUElement típust ad vissza, bármi, ami belekerül a gridbe
+            //ilyen elemként kerül bele
+            var image = (FontAwesome.WPF.ImageAwesome)cell;
+
+            //és már el tudom érni az ikon tulajdonságot
+            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
 
         }
 
@@ -44,9 +57,10 @@ namespace Snake201806.Model
                 case Key.Right:
                 case Key.Down:
                     //elindítjuk a játékot: eltüntetjük a játékszabályokat
-                    View.GamePlayTextBlock.Visibility = System.Windows.Visibility.Hidden;
+                    View.GamePlayBorder.Visibility = System.Windows.Visibility.Hidden;
                     View.NumberOfMealsTextBlock.Visibility = System.Windows.Visibility.Visible;
                     View.ArenaGrid.Visibility = System.Windows.Visibility.Visible;
+
                     Console.WriteLine(e.Key);
                     break;
             }
