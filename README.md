@@ -13,8 +13,7 @@
   - annál hosszabb
   - annál gyorsabb
 
-A játék képernyõi
-
+### A játék képernyõi
 Kezdõkép
 ```
 +-------------------------------------------+
@@ -98,3 +97,36 @@ Záróképernyõ
 |                                   |
 +-----------------------------------+
 ```
+
+### Vázlat az alkalmazás felépítéséhez
+Az alkalmazásunk felépítése a következõ lesz:
+```
+  Képernyõ (View)                                 Alkalmazás logika (Model)
++---------------------------------------+       +-----------------------------------+
+|                                       |       |                                   |
+|  A megjelenítést végzi, illetve       |       |   A feladata a játékmenethez      |
+|  a felhasználó vezérlését fogadja.    |       |   szükséges tudás birtoklása      |
+|                                       | +---> |   Fontos, hogy célunk szerint     |
+|                                       |       |   nem tudja, hogy a megjelenítés  |
+|                                       | <---+ |   pontosan mi.                    |
+|                                       |       |   (Ezt nem tudjuk maradéktalanul  |
+|                                       |       |   megoldani a jelenlegi           |
+|                                       |       |   tudásunkkal, de egy nagy        |
+|                                       |       |   lépést teszünk ebbe az irányba  |
+|                                       |       |                                   |
+|                                       |       |                                   |
+|                                       |       |                                   |
+|                                       |       |                                   |
+|                                       |       |                                   |
+|                                       |       |                                   |
+|                                       |       |                                   |
+|                                       |       |                                   |
++---------------------------------------+       +-----------------------------------+
+```
+
+### 1. feladat
+- [ ] elkészíteni a képernyõt (View)
+- [ ] elkészíteni az alkalmazáslogikát (Model)
+- [ ] ezt a két réteget összekötni
+
+ 
