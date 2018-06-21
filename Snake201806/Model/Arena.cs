@@ -17,6 +17,7 @@ namespace Snake201806.Model
     class Arena
     {
         private MainWindow View;
+        private Snake snake;
 
         /// <summary>
         /// Konstruktorfüggvény, ő hozza létre az osztály egy-egy példányát.
@@ -31,6 +32,8 @@ namespace Snake201806.Model
             //A játék kezdetén megjelenítjük a játékszabályokat
             //Az osztályon belül a thid használata nem kötelező
             View.GamePlayBorder.Visibility = System.Windows.Visibility.Visible;
+
+            snake = new Snake(10,10);
 
             //Kígyófej megjelenítése Circle ikonnal
             //A grid az általa tartalmazott elemeket egy gyűjteményen keresztül teszi elérhetővé
