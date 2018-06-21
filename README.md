@@ -143,8 +143,7 @@ Az alkalmazásunk felépítése a következõ lesz:
 
 ### 2. Feladat
 Játékmenet programozása
-- [ ] a kígyó megy amerre irányítjuk
-   - [ ] 
+- [X] a kígyó megy amerre irányítjuk
 - [ ] ha ütközik a fallal vége a játéknak
 - [ ] ha ütközik magával vége a játéknak
 
@@ -153,3 +152,5 @@ Játékmenet programozása
 ### 1. Házi feladat 
 - meg kell tudni jeleníteni az eltelt idõt
 - meg kell tudni jeleníteni a kígyó hosszát
+- elgondolkodni az ütközések programozásáról
+- csatlakozás a DotNet cápákhoz a [facebookon](https://www.facebook.com/groups/dotnetcapak/)
