@@ -23,10 +23,17 @@ namespace Snake201806
     {
         private Arena arena;
 
+        /// <summary>
+        /// A MainWindow konstruktorfüggvénye
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
-            arena = new Arena();
+            //Amikor létrehozzuk a játékmenetet,
+            //átadjuk paraméterben a képernyőt
+            //a this kulcsszó az adott osztálypéldányon 
+            //belül a hivatkozás az osztálypéldányra
+            arena = new Arena(this);
 
         }
 
