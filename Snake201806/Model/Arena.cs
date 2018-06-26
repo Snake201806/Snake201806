@@ -23,6 +23,8 @@ namespace Snake201806.Model
         private Snake snake;
         private DispatcherTimer pendulum;
         private bool isStarted;
+        private int RowCount;
+        private int ColumnCount;
 
         /// <summary>
         /// Konstruktorfüggvény, ő hozza létre az osztály egy-egy példányát.
@@ -44,6 +46,13 @@ namespace Snake201806.Model
                                             ItsTimeForDisplay, Application.Current.Dispatcher);
 
             isStarted = false;
+
+            //Az aréna méreteinek beállítása
+            //todo: az aréna méretezését átvenni a Windows Grid-ből.
+            RowCount = 20;
+            ColumnCount = 20;
+
+
         }
 
         private void ItsTimeForDisplay(object sender, EventArgs e)
@@ -83,6 +92,16 @@ namespace Snake201806.Model
                     break;
             }
 
+            //itt kéne tudni, hogy az új pozíció az vajon étel-e? vagy falnak mentünk-e?
+            //falnak mentünk?
+            if (snake.HeadPosition.RowPosition<0 || snake.HeadPosition.RowPosition>RowCount-1
+                || snake.HeadPosition.ColumnPosition<0 || snake.HeadPosition.ColumnPosition>ColumnCount-1)
+            { //falnak mentünk.
+                EndOfGame();
+                //mivel vége a játéknak, már nem csinálunk semmit.
+                return;
+            }
+
             ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
 
             //a kígyó fejébő nyak lesz, ennek megfelelően kell megjeleníteni
@@ -105,6 +124,15 @@ namespace Snake201806.Model
                 //majd az adatok közül is töröljük
                 snake.Tail.RemoveAt(0);
             }
+        }
+
+        private void EndOfGame()
+        {
+            Console.WriteLine("Játék vége: ");
+            pendulum.Stop();
+            //todo: ki kell írni, hogy vége a játéknak
+            //todo: és lehetőséget kell adni újrajátszásra
+
         }
 
         private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
