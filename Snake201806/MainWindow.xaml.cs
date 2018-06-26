@@ -34,7 +34,6 @@ namespace Snake201806
             //a this kulcsszó az adott osztálypéldányon 
             //belül a hivatkozás az osztálypéldányra
             arena = new Arena(this);
-
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)

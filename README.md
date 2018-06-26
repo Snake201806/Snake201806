@@ -144,9 +144,6 @@ Az alkalmazásunk felépítése a következõ lesz:
 ### 2. Feladat
 Játékmenet programozása
 - [X] a kígyó megy amerre irányítjuk
-- [ ] ha ütközik a fallal vége a játéknak
-- [ ] ha ütközik magával vége a játéknak
-
 
 
 ### 1. Házi feladat 
@@ -154,3 +151,43 @@ Játékmenet programozása
 - meg kell tudni jeleníteni a kígyó hosszát
 - elgondolkodni az ütközések programozásáról
 - csatlakozás a DotNet cápákhoz a [facebookon](https://www.facebook.com/groups/dotnetcapak/)
+
+
+### 3. Feladat
+- [ ] meg kell tudni jeleníteni a kígyó hosszát
+  - [X] a játék kezdetekor megmutatni a kígyót, "ahogy kibújik a kígyóverembõl"
+  - [ ] a kígyó testét navigálni a kígyófej mögött
+  - [ ] a kígyó evés után nõ
+
+
+Áttekintõ ábra
+```
+                                         A kígyó feje
+    A kígyófarok eleje  +------------>   +    (Head)
+       (Neck)                        |   |
+                                     v   v
+
+                                  ++ ++ ++
+                                  ++ ++ ++
+                                      ^+
+                                  ++   |
+                                  ++ <--<----------------+
+                                       |                 |
+                                  ++   |                 |
+A kígyófarok vége   +-----------> ++ <-+                 +
+  (End)                                               A kígyó farka
+                                                       (Tail)
+
+```
+
+
+
+
+
+
+
+- [ ] elgondolkodni az ütközések programozásáról
+  - [ ] ha ütközik a fallal vége a játéknak
+  - [ ] ha ütközik magával vége a játéknak
+- [ ] étel megjelenítése és evés
+- [ ] meg kell tudni jeleníteni az eltelt idõt

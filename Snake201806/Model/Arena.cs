@@ -59,7 +59,7 @@ namespace Snake201806.Model
             //var currentPosition = snake.HeadPosition;
 
             //új példányt hozunk létre, így elváasztjuk a jelenlegi példányra mutató referenciától
-            var currentPosition = new ArenaPosition(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+            var neck = new ArenaPosition(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
 
             //ki kell számolni a következő pozíciót a fej iránya alapján
             switch (snake.HeadDirection)
@@ -82,23 +82,29 @@ namespace Snake201806.Model
                     break;
             }
 
+            ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+
+            //a kígyó fejébő nyak lesz, ennek megfelelően kell megjeleníteni
+            
+            //cell = View.ArenaGrid.Children[neck.RowPosition * 20 + neck.ColumnPosition];
+            //image = (FontAwesome.WPF.ImageAwesome)cell;
+            //image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
+        }
+
+        private void ShowSnakeHead(int rowPosition, int columnPosition)
+        {
             //ki kell rajzolni a következő pozícióra a kígyó fejét
             //Kígyófej megjelenítése Circle ikonnal
             //A grid az általa tartalmazott elemeket egy gyűjteményen keresztül teszi elérhetővé
             //ez a gyűjtemény a Children
             //a gyűjtemény egy felsorolás, ahol az első elm a 0. indexő, a második az 1. indexű, és így tovább.
             //a 10. sor 10. elemét tehát így tudjuk elkérni a gyűjteménytől
-            var cell = View.ArenaGrid.Children[snake.HeadPosition.RowPosition * 20 + snake.HeadPosition.ColumnPosition];
+            var cell = View.ArenaGrid.Children[rowPosition * 20 + columnPosition];
             //viszont ez egy általános IUElement típust ad vissza, bármi, ami belekerül a gridbe
             //ilyen elemként kerül bele
             var image = (FontAwesome.WPF.ImageAwesome)cell;
             //és már el tudom érni az ikon tulajdonságot
             image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
-
-            //el kell tüntetni a korábbi pozícióról.
-            cell = View.ArenaGrid.Children[currentPosition.RowPosition * 20 + currentPosition.ColumnPosition];
-            image = (FontAwesome.WPF.ImageAwesome)cell;
-            image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
         }
 
         internal void KeyDown(KeyEventArgs e)

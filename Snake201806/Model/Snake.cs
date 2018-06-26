@@ -23,8 +23,17 @@ namespace Snake201806.Model
         //tudnia kell, hogy merre megy éppen
         public SnakeHeadDirectionEnum HeadDirection { get; set; }
 
-
         //tudnia kell, hogy milyen hosszú
+
+        /// <summary>
+        /// Ehhez nyilván kell tartanunk a kígyó farkának pontjait, 
+        /// amit egy listában célszerű megtenni
+        /// </summary>
+        public List<ArenaPosition> Tail { get; set; }
+
+        //két property: a kígyó farok vége, és a nyaka, ami az eleje.
+
+
 
     }
 }
