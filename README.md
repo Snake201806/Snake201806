@@ -129,9 +129,6 @@ Az alkalmazásunk felépítése a következõ lesz:
   - [X] tudnia kell megjeleníteni a kígyó fejét
     - [X] ehhez kell a játéktábla
       - [X] meg kell tudni jeleníteni a megevett ételek számát
-      - [ ] Opcionálisan
-        - [ ] meg kell tudni jeleníteni az eltelt idõt (Házi feladat)
-        - [ ] meg kell tudni jeleníteni a kígyó hosszát (Házi feladat)
   - [X] tudnia kell megjeleníteni a játékszabályokat
   - [X] tudnia kell elkapni a felhasználó vezérlõparancsait (billentyûleütések), és továbbítni a Model felé.
 - [X] elkészíteni az alkalmazáslogikát (Model)
@@ -200,13 +197,14 @@ A kígyófarok vége   +-----------> ++ <-+                 +
 - [ ] étel megjelenítése és evés
   - [X] az étel megjelenítése
     - [X] egyszerre mindig egy étel
-    - [ ] továbbfejlesztés: egyszerre több étel megjelenítése
   - [X] evés
-- [ ] a kígyó evés után gyorsul
-- [ ] a kígyó evés után nõjön
-- [ ] meg kell tudni jeleníteni az eltelt idõt
+- [X] a kígyó evés után gyorsul
+- [X] a kígyó evés után nõjön
 
 
 ### 2. Házi feladat
 - helyezzük át a fodds.Remove hívása elõtti ellenõrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
 - továbbfejlesztés: egyszerre több étel megjelenítése
+- meg kell tudni jeleníteni az eltelt idõt
+- meg kell tudni jeleníteni az eltelt idõt
+- meg kell tudni jeleníteni a kígyó hosszát

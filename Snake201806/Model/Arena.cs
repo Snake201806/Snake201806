@@ -46,10 +46,9 @@ namespace Snake201806.Model
             //Az osztályon belül a thid használata nem kötelező
             View.GamePlayBorder.Visibility = System.Windows.Visibility.Visible;
 
-            snake = new Snake(10,10);
+            snake = new Snake(10, 10);
 
-            pendulum = new DispatcherTimer(TimeSpan.FromMilliseconds(500),DispatcherPriority.Normal, 
-                                            ItsTimeForDisplay, Application.Current.Dispatcher);
+            StartPendulum();
 
             isStarted = false;
 
@@ -66,6 +65,25 @@ namespace Snake201806.Model
 
             foodsHaveEatenCount = 0;
 
+        }
+
+        private void StartPendulum()
+        {
+            //ha fut az ingaórám, akkor megállítjuk
+            //a C# nyelvben az ellenőrzés csak addig fut le, ameddig feltétlenül szükséges
+            //itt például, ha null a pendelum értéke, nem megy tovább a vizsgálat!!!
+            //fordítva, ez:  pendulum.IsEnabled && pendulum!=null
+            //null reference errorra futna, ha a pendelum null
+            if (pendulum!=null && pendulum.IsEnabled)
+            {
+                pendulum.Stop();
+            }
+
+            //(újra)indítjuk a kígyó hosszának megfelelően
+            //minél hosszabb a kígyó, annál rövidebb az intervallum
+            var interval = 3000 / snake.Length;
+            pendulum = new DispatcherTimer(TimeSpan.FromMilliseconds(interval), DispatcherPriority.Normal,
+                                            ItsTimeForDisplay, Application.Current.Dispatcher);
         }
 
         private void ItsTimeForDisplay(object sender, EventArgs e)
@@ -159,6 +177,11 @@ namespace Snake201806.Model
 
                 //számoljuk, hogy mennyit ettünk
                 foodsHaveEatenCount = foodsHaveEatenCount + 1;
+
+                //eggyel nőjön a kígyó hossza
+                snake.Length = snake.Length + 1;
+
+                //és gyorsuljon is
 
                 //megjelenítjük, hogy mennyit ettünk
                 View.NumberOfMealsTextBlock.Text = foodsHaveEatenCount.ToString();
