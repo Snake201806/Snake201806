@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Threading;
 
 namespace Snake201806.Model
@@ -85,26 +86,63 @@ namespace Snake201806.Model
             ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
 
             //a kígyó fejébő nyak lesz, ennek megfelelően kell megjeleníteni
-            
-            //cell = View.ArenaGrid.Children[neck.RowPosition * 20 + neck.ColumnPosition];
-            //image = (FontAwesome.WPF.ImageAwesome)cell;
-            //image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
+            ShowSnakeNeck(neck.RowPosition, neck.ColumnPosition);
+            //viszont, a farok adataihoz a nyaknak hozzá kell adódnia.
+            snake.Tail.Add(new ArenaPosition(neck.RowPosition, neck.ColumnPosition));
+
+            //amíg a kígyó hossza (Tail.Count) kevesebb, mint a kígyó hossza (Tail.Length) :)
+            if (snake.Tail.Count < snake.Length)
+            { //addig MEGJELENÍTÉSHEZ nem csinálunk semmit, a kígyó húzza a csóváját
+            }
+            else
+            { //a kígyó "előbújt", nem kell, hogy hosszabb legyen, a kígyó legvégét törölni kell
+
+                //kell az információ, hogy eltüntessük a képernyőről
+                //Az ábrán látszik, hogy a kígyó legvége mindig az első listaelem
+                var end = snake.Tail[0];
+                //meg kell jeleníteni erre az elemre a tábla rajzot (=eltüntetjük a tábláról)
+                ShowEmptyArenaPosition(end.RowPosition, end.ColumnPosition);
+                //majd az adatok közül is töröljük
+                snake.Tail.RemoveAt(0);
+            }
+        }
+
+        private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
+        {
+            var image = GetImage(rowPosition, columnPosition);
+            //és már el tudom érni az ikon tulajdonságot
+            image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
+            image.Foreground = Brushes.Black;
+        }
+
+        private void ShowSnakeNeck(int rowPosition, int columnPosition)
+        {
+            var image = GetImage(rowPosition, columnPosition);
+            //és már el tudom érni az ikon tulajdonságot
+            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+            image.Foreground = Brushes.Gray;
         }
 
         private void ShowSnakeHead(int rowPosition, int columnPosition)
         {
             //ki kell rajzolni a következő pozícióra a kígyó fejét
             //Kígyófej megjelenítése Circle ikonnal
+            var image = GetImage(rowPosition, columnPosition);
+            //és már el tudom érni az ikon tulajdonságot
+            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+        }
+
+        private FontAwesome.WPF.ImageAwesome GetImage(int rowPosition, int columnPosition)
+        {
             //A grid az általa tartalmazott elemeket egy gyűjteményen keresztül teszi elérhetővé
             //ez a gyűjtemény a Children
             //a gyűjtemény egy felsorolás, ahol az első elm a 0. indexő, a második az 1. indexű, és így tovább.
-            //a 10. sor 10. elemét tehát így tudjuk elkérni a gyűjteménytől
+            //a rowPosition. sor columnPosition. elemét tehát így tudjuk elkérni a gyűjteménytől
             var cell = View.ArenaGrid.Children[rowPosition * 20 + columnPosition];
             //viszont ez egy általános IUElement típust ad vissza, bármi, ami belekerül a gridbe
             //ilyen elemként kerül bele
             var image = (FontAwesome.WPF.ImageAwesome)cell;
-            //és már el tudom érni az ikon tulajdonságot
-            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+            return image;
         }
 
         internal void KeyDown(KeyEventArgs e)

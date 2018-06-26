@@ -15,6 +15,11 @@ namespace Snake201806.Model
         {
             HeadPosition = new ArenaPosition(rowPosition, columnPosition);
             HeadDirection = SnakeHeadDirectionEnum.InPlace;
+            Length = 6;
+            //gondoskodom arról, hogy a lista változóm listát tartalmazzon, 
+            //nehogy object reference null hibára fussunk
+            //http://netacademia.blog.hu/tags/null_object_pattern
+            Tail = new List<ArenaPosition>();
         }
 
         //tudnia kell, hogy hol van a kígyó feje
@@ -30,6 +35,9 @@ namespace Snake201806.Model
         /// amit egy listában célszerű megtenni
         /// </summary>
         public List<ArenaPosition> Tail { get; set; }
+
+        public int Length { get; set; }
+
 
         //két property: a kígyó farok vége, és a nyaka, ami az eleje.
 

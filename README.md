@@ -156,7 +156,7 @@ Játékmenet programozása
 ### 3. Feladat
 - [ ] meg kell tudni jeleníteni a kígyó hosszát
   - [X] a játék kezdetekor megmutatni a kígyót, "ahogy kibújik a kígyóverembõl"
-  - [ ] a kígyó testét navigálni a kígyófej mögött
+  - [X] a kígyó testét navigálni a kígyófej mögött
   - [ ] a kígyó evés után nõ
 
 
@@ -176,14 +176,22 @@ Játékmenet programozása
                                   ++   |                 |
 A kígyófarok vége   +-----------> ++ <-+                 +
   (End)                                               A kígyó farka
-                                                       (Tail)
+                                  ^                    (Tail)
+                                  |
+                                  |
+                                  |
+                                  |
+                                  |
+                                  +
 
+                       A legmesszebb ez az elem van a kígyó
+                       fejétõl, így ez került bele legrégebben
+                       a listába (List<ArenaPosition> Tail),
+                       ahova az új elemek
+                       mindig a legvégére kerülnek, így ez az
+                       elem értelemszerûen a legelsõ lesz
+                       a listában mindig
 ```
-
-
-
-
-
 
 
 - [ ] elgondolkodni az ütközések programozásáról
