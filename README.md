@@ -196,6 +196,6 @@ A kígyófarok vége   +-----------> ++ <-+                 +
 
 - [ ] elgondolkodni az ütközések programozásáról
   - [X] ha ütközik a fallal vége a játéknak
-  - [ ] ha ütközik magával vége a játéknak
+  - [X] ha ütközik magával vége a játéknak
 - [ ] étel megjelenítése és evés
 - [ ] meg kell tudni jeleníteni az eltelt idõt
