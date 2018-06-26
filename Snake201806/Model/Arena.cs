@@ -102,6 +102,35 @@ namespace Snake201806.Model
                 return;
             }
 
+
+            //old school model
+            //
+            //var isCollosion = false;
+            //foreach (var tailItem in snake.Tail)
+            //{ // a farokpontokon végigmegyünk
+            //    if (tailItem.RowPosition == snake.HeadPosition.RowPosition
+            //        && tailItem.ColumnPosition == snake.HeadPosition.ColumnPosition)
+            //    {
+            //        isCollosion = true;
+            //    }
+            //}
+            //if (isCollosion)
+            //{ //ütköztünk
+            //    EndOfGame();
+            //}
+
+            //beleharaptunk-e saját farkunkba?
+            //az Any linq axtension az adott feltételt megvizsgálja a lista minden elemére, és ha 
+            //bármelyikre igaz, akkor true-val tére vissza, különben false-zal.
+            //az x jelenti a lista egy adott elemét, ebben az esetben egy ArenaPosition-t ami a Tail listán van.
+            if (snake.Tail.Any(x=>x.RowPosition==snake.HeadPosition.RowPosition 
+                                && x.ColumnPosition==snake.HeadPosition.ColumnPosition))
+            { //ütköztünk
+                EndOfGame();
+                //mivel játék vége van, nem folytatjuk a megjelenítést
+                return;
+            }
+
             ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
 
             //a kígyó fejébő nyak lesz, ennek megfelelően kell megjeleníteni
