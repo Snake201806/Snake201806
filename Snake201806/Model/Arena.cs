@@ -23,10 +23,14 @@ namespace Snake201806.Model
         private Snake snake;
         private DispatcherTimer pendulum;
         private bool isStarted;
+        //a tábla méretei
         private int RowCount;
         private int ColumnCount;
         private Random Random; //használhatom a típus nevét változónévkén is nyugodtan
+        //ételek nyilvántartása
         private Foods foods;
+        //a megevett ételek száma
+        private int foodsHaveEatenCount;
 
         /// <summary>
         /// Konstruktorfüggvény, ő hozza létre az osztály egy-egy példányát.
@@ -59,6 +63,9 @@ namespace Snake201806.Model
 
             //az ételeket nyilvántartó osztályt létrehozzuk, az arénában bárki használhatja
             foods = new Foods();
+
+            foodsHaveEatenCount = 0;
+
         }
 
         private void ItsTimeForDisplay(object sender, EventArgs e)
@@ -136,6 +143,31 @@ namespace Snake201806.Model
                 //mivel játék vége van, nem folytatjuk a megjelenítést
                 return;
             }
+
+            //ellenőrizni, hogy ettünk-e?
+            //az x az egy foodPosition
+            //todo: helyezzük át ezt az ellenőrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
+            
+            if (foods.FoodPositions.Any(x=>x.RowPosition==snake.HeadPosition.RowPosition
+                                        &&x.ColumnPosition==snake.HeadPosition.ColumnPosition))
+            { //ettünk
+                //a kígyó feje el fogja tüntetni az ételt, 
+                //így csak adminisztrálnunk kell.
+
+                //töröljük az ételt az ételek közül
+                foods.Remove(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+
+                //számoljuk, hogy mennyit ettünk
+                foodsHaveEatenCount = foodsHaveEatenCount + 1;
+
+                //megjelenítjük, hogy mennyit ettünk
+                View.NumberOfMealsTextBlock.Text = foodsHaveEatenCount.ToString();
+
+                //generálunk egy új ételt
+                GetNewFood();
+
+            }
+
 
             ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
 
@@ -259,7 +291,17 @@ namespace Snake201806.Model
             View.ArenaGrid.Visibility = System.Windows.Visibility.Visible;
             isStarted = true;
 
+            GetNewFood();
 
+        }
+
+        /// <summary>
+        /// Ennek a függvénynek az a feladata, hogy generáljon egy új ételt,
+        /// olyat, ami nem a kígyó fejények a helyén és nem a kígyó farkának helyén van
+        /// és jelenítse is ezt az új ételt meg
+        /// </summary>
+        private void GetNewFood()
+        {
             //olyan helyre, ahol a kígyó van nem kerülhet étel
 
             //itt kell az ételeket is kiosztani
@@ -286,8 +328,6 @@ namespace Snake201806.Model
 
             //megjelenítjük az új ételt
             ShowNewFood(row, column);
-
-
         }
     }
 }

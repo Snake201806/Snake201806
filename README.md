@@ -199,8 +199,14 @@ A kígyófarok vége   +-----------> ++ <-+                 +
   - [X] ha ütközik magával vége a játéknak
 - [ ] étel megjelenítése és evés
   - [X] az étel megjelenítése
-    - [ ] egyszerre mindig egy étel
+    - [X] egyszerre mindig egy étel
     - [ ] továbbfejlesztés: egyszerre több étel megjelenítése
-  - [ ] evés
+  - [X] evés
 - [ ] a kígyó evés után gyorsul
+- [ ] a kígyó evés után nõjön
 - [ ] meg kell tudni jeleníteni az eltelt idõt
+
+
+### 2. Házi feladat
+- helyezzük át a fodds.Remove hívása elõtti ellenõrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
+- továbbfejlesztés: egyszerre több étel megjelenítése

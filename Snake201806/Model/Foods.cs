@@ -20,5 +20,17 @@ namespace Snake201806.Model
         {
             FoodPositions.Add(new ArenaPosition(row, column));
         }
+
+        internal void Remove(int rowPosition, int columnPosition)
+        {
+            //az x a FoodPositions lista egy eleme
+            //ez a sor akkor fut le, ha létezik pontosan egy elem, amire a feltétel igaz!
+            //ha nincs ilyen, vagy több ilyen van, akkor a program elszáll.
+            var foodToDelete = FoodPositions.Single(x => x.RowPosition == rowPosition
+                                                    && x.ColumnPosition == columnPosition);
+
+
+            FoodPositions.Remove(foodToDelete);
+        }
     }
 }
