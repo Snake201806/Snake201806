@@ -25,6 +25,8 @@ namespace Snake201806.Model
         private bool isStarted;
         private int RowCount;
         private int ColumnCount;
+        private Random Random; //használhatom a típus nevét változónévkén is nyugodtan
+        private Foods foods;
 
         /// <summary>
         /// Konstruktorfüggvény, ő hozza létre az osztály egy-egy példányát.
@@ -52,7 +54,11 @@ namespace Snake201806.Model
             RowCount = 20;
             ColumnCount = 20;
 
+            //a véletlenszám generátort létrehozzuk, az arénában bárki használhatja
+            Random = new Random();
 
+            //az ételeket nyilvántartó osztályt létrehozzuk, az arénában bárki használhatja
+            foods = new Foods();
         }
 
         private void ItsTimeForDisplay(object sender, EventArgs e)
@@ -161,7 +167,15 @@ namespace Snake201806.Model
             pendulum.Stop();
             //todo: ki kell írni, hogy vége a játéknak
             //todo: és lehetőséget kell adni újrajátszásra
+        }
 
+        //todo: ebből a négy függvényből el lehetne tüntetni a duplikációt
+        private void ShowNewFood(int rowPosition, int columnPosition)
+        {
+            var image = GetImage(rowPosition, columnPosition);
+            //és már el tudom érni az ikon tulajdonságot
+            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Apple;
+            image.Foreground = Brushes.Red;
         }
 
         private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
@@ -244,6 +258,36 @@ namespace Snake201806.Model
             View.NumberOfMealsTextBlock.Visibility = System.Windows.Visibility.Visible;
             View.ArenaGrid.Visibility = System.Windows.Visibility.Visible;
             isStarted = true;
+
+
+            //olyan helyre, ahol a kígyó van nem kerülhet étel
+
+            //itt kell az ételeket is kiosztani
+            //véletlenszerűnek kell lennie
+            var row = Random.Next(0, RowCount - 1);
+            var column = Random.Next(0, ColumnCount - 1);
+
+            //figyelem, ez a 2. szabálynak ellentmond:
+            //http://spinroot.com/p10/
+            //innen: http://netacademia.blog.hu/2016/03/30/igy_fejleszt_a_nasa_c_programozasi_nyelven_marsjarot
+            while (snake.HeadPosition.RowPosition == row && snake.HeadPosition.ColumnPosition == column //ez a kígyó feje, ide nem kerülhet étel
+                || snake.Tail.Any(x => x.RowPosition == row && x.ColumnPosition == column)) //ez meg a farokrésze, ide sem
+            { // új generálást kell készíteni
+                row = Random.Next(0, RowCount - 1);
+                column = Random.Next(0, ColumnCount - 1);
+            }
+
+            //adminisztráljuk az adatokat
+
+            //ez helyett készítünk
+            //foods.FoodPositions.Add(new ArenaPosition(row, column));
+            //egy ilyet
+            foods.Add(row, column);
+
+            //megjelenítjük az új ételt
+            ShowNewFood(row, column);
+
+
         }
     }
 }

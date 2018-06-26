@@ -73,6 +73,7 @@
   <ItemGroup>
     <Compile Include="Model\Arena.cs" />
     <Compile Include="Model\ArenaPosition.cs" />
+    <Compile Include="Model\Foods.cs" />
     <Compile Include="Model\Snake.cs" />
     <Compile Include="Model\SnakeHeadDirectionEnum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
