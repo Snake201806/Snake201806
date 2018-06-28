@@ -227,13 +227,26 @@ namespace Snake201806.Model
         }
 
         //todo: ebből a négy függvényből el lehetne tüntetni a duplikációt
-        private void ShowNewFood(int rowPosition, int columnPosition)
+        private UIElement ShowNewFood(int rowPosition, int columnPosition)
         {
             var image = GetImage(rowPosition, columnPosition);
             //és már el tudom érni az ikon tulajdonságot
             image.Icon = FontAwesome.WPF.FontAwesomeIcon.Apple;
             image.Foreground = Brushes.Red;
 
+            var paint = PaintOnCanvas(rowPosition, columnPosition);
+            return paint;
+
+        }
+
+        /// <summary>
+        /// Rajzol egy elemet a Canvas-ra. 
+        /// </summary>
+        /// <param name="rowPosition">sorpizíció</param>
+        /// <param name="columnPosition">oszloppozíció</param>
+        /// <returns>A kirajzolt elem, amit aztán majd törölni kell</returns>
+        private UIElement PaintOnCanvas(int rowPosition, int columnPosition)
+        {
             var paint = new Ellipse();
 
             //a megjelenítés után az aktiális mérete ezzel kérdezhető le egy-egy 
@@ -250,9 +263,16 @@ namespace Snake201806.Model
 
             //Végül hozzáadjuk a Canvas-hoz, ezzel megjelenítjük
             View.ArenaCanvas.Children.Add(paint);
+            return paint;
+        }
 
-            
-
+        /// <summary>
+        /// Ez a rajzolófüggvény párja, a kirajzolt elem törlésére
+        /// </summary>
+        /// <param name="paint">a rajzoláskor használt elemet kell visszaküldeni a törléshez</param>
+        private void EraseFromCanvas(UIElement paint)
+        {
+            View.ArenaCanvas.Children.Remove(paint);
         }
 
         private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
@@ -364,15 +384,17 @@ namespace Snake201806.Model
                 column = Random.Next(0, ColumnCount - 1);
             }
 
+
+            //megjelenítjük az új ételt
+            var paint = ShowNewFood(row, column);
+
             //adminisztráljuk az adatokat
 
             //ez helyett készítünk
             //foods.FoodPositions.Add(new ArenaPosition(row, column));
             //egy ilyet
-            foods.Add(row, column);
+            foods.Add(row, column, paint);
 
-            //megjelenítjük az új ételt
-            ShowNewFood(row, column);
         }
     }
 }

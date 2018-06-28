@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace Snake201806.Model
 {
@@ -11,14 +12,14 @@ namespace Snake201806.Model
         public Foods()
         {
             //null object pattern
-            FoodPositions = new List<ArenaPosition>();
+            FoodPositions = new List<CanvasPosition>();
         }
 
-        public List<ArenaPosition> FoodPositions { get; set; }
+        public List<CanvasPosition> FoodPositions { get; set; }
 
-        internal void Add(int row, int column)
+        internal void Add(int row, int column, UIElement paint)
         {
-            FoodPositions.Add(new ArenaPosition(row, column));
+            FoodPositions.Add(new CanvasPosition(row, column, paint));
         }
 
         internal void Remove(int rowPosition, int columnPosition)
@@ -32,5 +33,6 @@ namespace Snake201806.Model
 
             FoodPositions.Remove(foodToDelete);
         }
+
     }
 }

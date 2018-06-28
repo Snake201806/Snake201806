@@ -261,6 +261,45 @@ Megoldási lehetõségek:
 - Remove() : ehhez meg kell tartani az eredeti elemet
 
   - [ ] Nyilván kell tudni tartani a kirajzolt elipsziseket a meglévõ adatok mellé
+
+Osztályok leszármaztatása, létrehozás
+```
+ CanvasPosition                            ArenaPosition
+
++------------------------+               +-------------------------+
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        | +-----------> |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
+|                        |               |                         |
++------------------------+               +-------------------------+
+
+
+
+             A CanvasPosition leszármazottja az ArenaPosition-nek
+             vagy
+             Az ArenaPosition õsosztálya a CanvasPosition-nek
+             ez a kettõ ugyanazt jelenti
+
+             Ebbõl az következik, hogyha mi létrehozunk egy CanvasPosition-t,
+             akkor mindig létrejön egy ArenaPosition példány, õ fogja mindazt
+             megoldani, amit az ArenaPosition tud.
+             Ebbõl az következik, hogy MINDIG tudnuk kell példányosítani egy
+             ArenaPosition-t.
+```
+
+
+
+
   - [ ] vissza kell tudni kapni a kereséskor azt az elemet, amit éppen törölni szeretnénk
   - [ ] így tudjuk majd törölni a kirajzolt elemet a Canvas.Childrenbõl
 
