@@ -235,7 +235,8 @@ namespace Snake201806.Model
         /// <param name="rowPosition">sorpizíció</param>
         /// <param name="columnPosition">oszloppozíció</param>
         /// <returns>A kirajzolt elem, amit aztán majd törölni kell</returns>
-        private UIElement PaintOnCanvas(int rowPosition, int columnPosition)
+        /// 
+        private UIElement PaintOnCanvas(int rowPosition, int columnPosition, VisibleElementTypesEnum visibleType)
         {
             var paint = new Ellipse();
 
@@ -244,8 +245,24 @@ namespace Snake201806.Model
             paint.Height = View.ArenaCanvas.ActualHeight / RowCount;
             paint.Width = View.ArenaCanvas.ActualWidth / ColumnCount;
 
-            //A kitöltő szín legyen ugyanolyan piros, mint az almáé a Grid-en
-            paint.Fill = Brushes.Red;
+            switch (visibleType)
+            {
+                case VisibleElementTypesEnum.SnakeHead:
+                    paint.Fill = Brushes.Black;
+                    break;
+                case VisibleElementTypesEnum.SnakeNeck:
+                    paint.Fill = Brushes.Gray;
+                    break;
+                case VisibleElementTypesEnum.Food:
+                    //A kitöltő szín legyen ugyanolyan piros, mint az almáé a Grid-en
+                    paint.Fill = Brushes.Red;
+                    break;
+                case VisibleElementTypesEnum.EmptyArenaPosition:
+                    paint.Fill = Brushes.Aquamarine;
+                    break;
+                default:
+                    break;
+            }
 
             //Meg kell határoztatni Canvas koordinátákban a kirajzolandó pozíciót
             Canvas.SetTop(paint, rowPosition * paint.Height);
@@ -297,26 +314,43 @@ namespace Snake201806.Model
             PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.Food);
 
             //rajz a Canvas-on
-            var paint = PaintOnCanvas(rowPosition, columnPosition);
+            var paint = PaintOnCanvas(rowPosition, columnPosition, VisibleElementTypesEnum.Food);
 
             //visszaküldjük ez utóbbit a törléshez
             return paint;
         }
 
-
-        private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
-        {
-            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
-        }
-
-        private void ShowSnakeNeck(int rowPosition, int columnPosition)
-        {
-            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeNeck);
-        }
-
-        private void ShowSnakeHead(int rowPosition, int columnPosition)
+        private UIElement ShowSnakeHead(int rowPosition, int columnPosition)
         {
             PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeHead);
+
+            //rajz a Canvas-on
+            var paint = PaintOnCanvas(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeHead);
+
+            //visszaküldjük ez utóbbit a törléshez
+            return paint;
+        }
+
+        private UIElement ShowSnakeNeck(int rowPosition, int columnPosition)
+        {
+            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeNeck);
+            
+            //rajz a Canvas-on
+            var paint = PaintOnCanvas(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeNeck);
+
+            //visszaküldjük ez utóbbit a törléshez
+            return paint;
+        }
+
+        private UIElement ShowEmptyArenaPosition(int rowPosition, int columnPosition)
+        {
+            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
+
+            //rajz a Canvas-on
+            var paint = PaintOnCanvas(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
+
+            //visszaküldjük ez utóbbit a törléshez
+            return paint;
         }
 
         private FontAwesome.WPF.ImageAwesome GetImage(int rowPosition, int columnPosition)
