@@ -171,11 +171,14 @@ namespace Snake201806.Model
             if (foods.FoodPositions.Any(x=>x.RowPosition==snake.HeadPosition.RowPosition
                                         &&x.ColumnPosition==snake.HeadPosition.ColumnPosition))
             { //ettünk
-                //a kígyó feje el fogja tüntetni az ételt, 
+                //a kígyó feje el fogja tüntetni az ételt, a gridről
                 //így csak adminisztrálnunk kell.
 
                 //töröljük az ételt az ételek közül
-                foods.Remove(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+                var foodToDelete = foods.Remove(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+
+                //A Canvasról viszont nekünk kell törölnünk.
+                EraseFromCanvas(foodToDelete.Paint);
 
                 //számoljuk, hogy mennyit ettünk
                 foodsHaveEatenCount = foodsHaveEatenCount + 1;

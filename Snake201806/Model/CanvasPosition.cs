@@ -14,12 +14,12 @@ namespace Snake201806.Model
     /// </summary>
     class CanvasPosition : ArenaPosition
     {
-        private UIElement paint;
+        public UIElement Paint { get; set; }
 
         public CanvasPosition(int rowPosition, int columnPosition, UIElement paint) 
             : base(rowPosition, columnPosition) //ezzel a háttérben lévő ősosztály példányosítása történik meg
         {
-            this.paint = paint;
+            this.Paint = paint;
         }
     }
 }

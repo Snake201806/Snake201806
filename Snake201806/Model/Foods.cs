@@ -22,7 +22,13 @@ namespace Snake201806.Model
             FoodPositions.Add(new CanvasPosition(row, column, paint));
         }
 
-        internal void Remove(int rowPosition, int columnPosition)
+        /// <summary>
+        /// Egy elem törlése az ételek közül
+        /// </summary>
+        /// <param name="rowPosition"></param>
+        /// <param name="columnPosition"></param>
+        /// <returns>azzal az étellel tér vissza, amit törölt</returns>
+        internal CanvasPosition Remove(int rowPosition, int columnPosition)
         {
             //az x a FoodPositions lista egy eleme
             //ez a sor akkor fut le, ha létezik pontosan egy elem, amire a feltétel igaz!
@@ -32,6 +38,7 @@ namespace Snake201806.Model
 
 
             FoodPositions.Remove(foodToDelete);
+            return foodToDelete;
         }
 
     }
