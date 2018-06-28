@@ -318,4 +318,4 @@ mindenkit várok a következõ tanfolyamon: [étterem projekt](https://app.netacadem
 illetve a Facebokon a [dotnet cápák](https://www.facebook.com/groups/dotnetcapak/) csoportban
 netacadémia blog: http://netacademia.blog.hu/
 
-
+Minden nap kódoljatok!
