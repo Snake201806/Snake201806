@@ -164,21 +164,16 @@ namespace Snake201806.Model
             }
 
             //ellenőrizni, hogy ettünk-e?
-            //az x az egy foodPosition
-            //todo: helyezzük át ezt az ellenőrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
-            
-            if (foods.FoodPositions.Any(x=>x.RowPosition==snake.HeadPosition.RowPosition
-                                        &&x.ColumnPosition==snake.HeadPosition.ColumnPosition))
-            { //ettünk
+            //megpróbáljuk törölni az ételt az ételek közül
+            var foodToDelete = foods.Remove(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+            if (foodToDelete!=null)
+            {
+                //ettünk
                 //a kígyó feje el fogja tüntetni az ételt, a gridről
                 //így csak adminisztrálnunk kell.
 
-                //töröljük az ételt az ételek közül
-                var foodToDelete = foods.Remove(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
-
                 //A Canvasról viszont nekünk kell törölnünk.
                 EraseFromCanvas(foodToDelete.Paint);
-
                 //számoljuk, hogy mennyit ettünk
                 foodsHaveEatenCount = foodsHaveEatenCount + 1;
 
