@@ -32,7 +32,7 @@
 
             <!--A játék négyzethálója rákerül a megevett 
         ételek számára, vagyis felette lesz-->
-            <Grid x:Name="ArenaGrid">
+            <Grid x:Name="ArenaGrid" Background="Cyan">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -85,425 +85,425 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="0" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="0" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="0" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="1" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="1" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="1" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="2" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="2" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="2" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="3" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="3" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="3" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="4" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="4" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="4" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="5" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="5" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="5" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="6" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="6" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="6" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="7" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="7" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="7" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="8" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="8" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="8" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="9" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="9" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="9" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="10" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="10" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="10" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="11" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="11" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="11" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="12" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="12" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="12" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="13" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="13" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="13" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="14" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="14" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="14" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="15" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="15" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="15" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="16" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="16" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="16" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="17" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="17" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="17" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="18" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="18" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="18" />
 
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="0" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="1" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="2" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="3" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="4" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="5" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="6" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="7" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="8" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="9" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="10" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="11" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="12" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="13" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="14" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="15" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="16" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="17" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="18" Grid.Row="19" />
-                <fa:ImageAwesome Icon="SquareOutline" Grid.Column="19" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="0" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="1" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="2" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="3" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="4" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="5" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="6" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="7" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="8" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="9" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="10" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="11" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="12" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="13" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="14" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="15" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="16" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="17" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="18" Grid.Row="19" />
+                <fa:ImageAwesome Icon="SquareOutline" Opacity="0" Grid.Column="19" Grid.Row="19" />
             </Grid>
 
             <!--A játékszabályok a legfelső rétegbe kerülnek így,

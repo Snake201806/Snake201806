@@ -55,9 +55,8 @@ namespace Snake201806.Model
             isStarted = false;
 
             //Az aréna méreteinek beállítása
-            //todo: az aréna méretezését átvenni a Windows Grid-ből.
-            RowCount = 20;
-            ColumnCount = 20;
+            RowCount = View.ArenaGrid.RowDefinitions.Count;
+            ColumnCount = View.ArenaGrid.ColumnDefinitions.Count;
 
             //a véletlenszám generátort létrehozzuk, az arénában bárki használhatja
             Random = new Random();
@@ -296,18 +295,25 @@ namespace Snake201806.Model
             {
                 case VisibleElementTypesEnum.SnakeHead:
                     image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+                    image.Foreground = Brushes.Black;
+                    image.Opacity = 1; //visszaállítjuk láthatóra, hogy ahol a kígyó már járt ott is látszódjon
                     break;
                 case VisibleElementTypesEnum.SnakeNeck:
                     image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
                     image.Foreground = Brushes.Gray;
+                    image.Opacity = 1; //visszaállítjuk láthatóra, hogy ahol a kígyó már járt ott is látszódjon
                     break;
                 case VisibleElementTypesEnum.Food:
                     image.Icon = FontAwesome.WPF.FontAwesomeIcon.Apple;
                     image.Foreground = Brushes.Red;
+                    image.Opacity = 1; //visszaállítjuk láthatóra, hogy ahol a kígyó már járt ott is látszódjon
                     break;
                 case VisibleElementTypesEnum.EmptyArenaPosition:
                     image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
-                    image.Foreground = Brushes.Black;
+                    //image.Icon = FontAwesome.WPF.FontAwesomeIcon.None; //ez nem akart működni, szemetet hagy magamögött
+                    //image.Foreground = Brushes.White; //a mögötte lévő (megevett ételek száma) számon látszik a fehér, ez sem jó
+                    image.Opacity = 0; //átállítjuk átlátszóra, így nem látszik.
+
                     break;
                 default:
                     break;
