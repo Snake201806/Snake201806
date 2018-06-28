@@ -229,19 +229,6 @@ namespace Snake201806.Model
             //todo: és lehetőséget kell adni újrajátszásra
         }
 
-        //todo: ebből a négy függvényből el lehetne tüntetni a duplikációt
-        private UIElement ShowNewFood(int rowPosition, int columnPosition)
-        {
-            var image = GetImage(rowPosition, columnPosition);
-            //és már el tudom érni az ikon tulajdonságot
-            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Apple;
-            image.Foreground = Brushes.Red;
-
-            var paint = PaintOnCanvas(rowPosition, columnPosition);
-            return paint;
-
-        }
-
         /// <summary>
         /// Rajzol egy elemet a Canvas-ra. 
         /// </summary>
@@ -278,29 +265,58 @@ namespace Snake201806.Model
             View.ArenaCanvas.Children.Remove(paint);
         }
 
-        private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
+        private void PaintOnGrid(int rowPosition, int columnPosition, VisibleElementTypesEnum visibleType)
         {
             var image = GetImage(rowPosition, columnPosition);
             //és már el tudom érni az ikon tulajdonságot
-            image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
-            image.Foreground = Brushes.Black;
+            switch (visibleType)
+            {
+                case VisibleElementTypesEnum.SnakeHead:
+                    image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+                    break;
+                case VisibleElementTypesEnum.SnakeNeck:
+                    image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+                    image.Foreground = Brushes.Gray;
+                    break;
+                case VisibleElementTypesEnum.Food:
+                    image.Icon = FontAwesome.WPF.FontAwesomeIcon.Apple;
+                    image.Foreground = Brushes.Red;
+                    break;
+                case VisibleElementTypesEnum.EmptyArenaPosition:
+                    image.Icon = FontAwesome.WPF.FontAwesomeIcon.SquareOutline;
+                    image.Foreground = Brushes.Black;
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private UIElement ShowNewFood(int rowPosition, int columnPosition)
+        {
+            //rajz a grid-en
+            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.Food);
+
+            //rajz a Canvas-on
+            var paint = PaintOnCanvas(rowPosition, columnPosition);
+
+            //visszaküldjük ez utóbbit a törléshez
+            return paint;
+        }
+
+
+        private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
+        {
+            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
         }
 
         private void ShowSnakeNeck(int rowPosition, int columnPosition)
         {
-            var image = GetImage(rowPosition, columnPosition);
-            //és már el tudom érni az ikon tulajdonságot
-            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
-            image.Foreground = Brushes.Gray;
+            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeNeck);
         }
 
         private void ShowSnakeHead(int rowPosition, int columnPosition)
         {
-            //ki kell rajzolni a következő pozícióra a kígyó fejét
-            //Kígyófej megjelenítése Circle ikonnal
-            var image = GetImage(rowPosition, columnPosition);
-            //és már el tudom érni az ikon tulajdonságot
-            image.Icon = FontAwesome.WPF.FontAwesomeIcon.Circle;
+            PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.SnakeHead);
         }
 
         private FontAwesome.WPF.ImageAwesome GetImage(int rowPosition, int columnPosition)
