@@ -154,7 +154,7 @@ Játékmenet programozása
 - [ ] meg kell tudni jeleníteni a kígyó hosszát
   - [X] a játék kezdetekor megmutatni a kígyót, "ahogy kibújik a kígyóverembõl"
   - [X] a kígyó testét navigálni a kígyófej mögött
-  - [ ] a kígyó evés után nõ
+  - [X] a kígyó evés után nõ
 
 
 Áttekintõ ábra
@@ -194,7 +194,7 @@ A kígyófarok vége   +-----------> ++ <-+                 +
 - [X] elgondolkodni az ütközések programozásáról
   - [X] ha ütközik a fallal vége a játéknak
   - [X] ha ütközik magával vége a játéknak
-- [ ] étel megjelenítése és evés
+- [X] étel megjelenítése és evés
   - [X] az étel megjelenítése
     - [X] egyszerre mindig egy étel
   - [X] evés
@@ -204,7 +204,22 @@ A kígyófarok vége   +-----------> ++ <-+                 +
 
 ### 2. Házi feladat
 - helyezzük át a fodds.Remove hívása elõtti ellenõrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
-- továbbfejlesztés: egyszerre több étel megjelenítése
-- meg kell tudni jeleníteni az eltelt idõt
 - meg kell tudni jeleníteni az eltelt idõt
 - meg kell tudni jeleníteni a kígyó hosszát
+- továbbfejlesztés: egyszerre több étel megjelenítése
+
+
+### 4. Feladat
+- [ ] helyezzük át a fodds.Remove hívása elõtti ellenõrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
+- [ ] az ismétlõdések kiszervezése
+- [ ] egy második megjelenítési típus befezetése (Canvas)
+
+### 3. Házi feladat
+- továbbfejlesztés: egyszerre több étel megjelenítése
+- Záróképernyõ
+- Játék megállítása és újraindítása gomb
+- meg kell tudni jeleníteni az eltelt idõt
+- meg kell tudni jeleníteni a kígyó hosszát
+
+
+
