@@ -4,8 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace Snake201806.Model
@@ -231,6 +233,24 @@ namespace Snake201806.Model
             //és már el tudom érni az ikon tulajdonságot
             image.Icon = FontAwesome.WPF.FontAwesomeIcon.Apple;
             image.Foreground = Brushes.Red;
+
+            var paint = new Ellipse();
+
+            //a megjelenítés után az aktiális mérete ezzel kérdezhető le egy-egy 
+            //megjelenített elemnek
+            paint.Height = View.ArenaCanvas.ActualHeight / RowCount;
+            paint.Width = View.ArenaCanvas.ActualWidth / ColumnCount;
+
+            //A kitöltő szín legyen ugyanolyan piros, mint az almáé a Grid-en
+            paint.Fill = Brushes.Red;
+
+            //Meg kell határoztatni Canvas koordinátákban a kirajzolandó pozíciót
+            Canvas.SetTop(paint, rowPosition * paint.Height);
+            Canvas.SetLeft(paint, columnPosition * paint.Width);
+
+            //Végül hozzáadjuk a Canvas-hoz, ezzel megjelenítjük
+            View.ArenaCanvas.Children.Add(paint);
+
         }
 
         private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)
