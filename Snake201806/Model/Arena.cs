@@ -251,6 +251,8 @@ namespace Snake201806.Model
             //Végül hozzáadjuk a Canvas-hoz, ezzel megjelenítjük
             View.ArenaCanvas.Children.Add(paint);
 
+            
+
         }
 
         private void ShowEmptyArenaPosition(int rowPosition, int columnPosition)

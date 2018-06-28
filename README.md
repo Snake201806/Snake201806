@@ -214,6 +214,58 @@ A kígyófarok vége   +-----------> ++ <-+                 +
 - [ ] az ismétlõdések kiszervezése
 - [ ] egy második megjelenítési típus befezetése (Canvas)
 
+Tudnivalók
+- A Canvas megjelenítéskor egy Children gyûjteményben rögzíti a megjelenítendõ elemeket
+- Amilyen sorrendben megjelennek ezek az elemek, olyan sorrendben kerülnek ebbe a gyûjteménybe
+- ha törlök ezekbõl az elemekbõl, az indexelés megváltozik a tömbnek
+```
+ Canvas
+
++-----------------------------------------------+
+|                                               |
+|                 3                             |
+|                 +----+                        |
+|                 |    |   +------------------------------->        Children
+|                 +----+                        |                  +---------------------+
+|                                               |          +       |                     |
+|                                               |          |       | +-----------------+ |  0
+|    1                                          |          |       | +-----------------+ |
+|    +-----+                                    |          |       |                     |
+|    |     | +-------------------------------------------> |       | +-----------------+ |  1
+|    +-----+                                    |          |       | +-----------------+ |
+|                              2                |          |       |                     |
+|                              +-----+          |          |       | +-----------------+ |  2
+|                              |     | +-----------------> |       | +-----------------+ |
+|                              +-----+          |          |       |                     |
+|                                               |          |       |                     |
++-----------------------------------------------+          |       |                     |
+                                                           |       |                     |
+                                                           |       |                     |
+                                                           |       +---------+-----------+
+                                                           |                 ^
+                                                           |                 |
+                                                           |                 |
+                                                           v +-------------->+
+
+```
+
+Megoldási lehetõségek:
+- RemoveAt() : ehhez ismerni kell az indexet
+    - létrehozunk mi is egy listát, amiben ugyanazokat az elemeket nyilvántartjuk, mint amit a Canvas.Children nyilvántart. Tehát: 
+      - ha felviszünk egy új elemet, akkor a mi listánkba is felviszünk egy új elemet, 
+      - ha törlünk a Childrenbõl, akkor töröljük a listánkról is a megfelelõ elemet.
+    - teszünk egyéb megkötéseket, például
+      - az ételeket mindig a 0. elemre tesszük, (az InsertAt függvény segítségével), így 
+        - mindig az elején lesznek az ételek, 
+        - és mindig a végén a kígyó
+- Remove() : ehhez meg kell tartani az eredeti elemet
+
+  - [ ] Nyilván kell tudni tartani a kirajzolt elipsziseket a meglévõ adatok mellé
+  - [ ] vissza kell tudni kapni a kereséskor azt az elemet, amit éppen törölni szeretnénk
+  - [ ] így tudjuk majd törölni a kirajzolt elemet a Canvas.Childrenbõl
+
+
+
 ### 3. Házi feladat
 - továbbfejlesztés: egyszerre több étel megjelenítése
 - Záróképernyõ
