@@ -301,7 +301,6 @@ Osztályok leszármaztatása, létrehozás
   - [X] így tudjuk majd törölni a kirajzolt elemet a Canvas.Childrenbõl
 
 
-
 ### 3. Házi feladat
 - továbbfejlesztés: egyszerre több étel megjelenítése
 - Záróképernyõ
@@ -309,5 +308,14 @@ Osztályok leszármaztatása, létrehozás
 - meg kell tudni jeleníteni az eltelt idõt
 - meg kell tudni jeleníteni a kígyó hosszát
 
+Továbbiak:
+
+- [C# lenyûgözö tanfolyam három alkalom](https://app.netacademia.hu/Tanfolyam/2018csharp-lenyugozo-c-programozas)
+- [DotNet Cápák ingyenes sorozat utolsó alkalmai](https://app.netacademia.hu/Tanfolyam/2018dotnet-dotnet-capak)
+- A DotNet cápákon fejlesztett alkalmazás [a githubon](https://github.com/gplesz/adhr)
+
+mindenkit várok a következõ tanfolyamon: [étterem projekt](https://app.netacademia.hu/Tanfolyam/2018Restaurant-betekintes-az-objektumorientalt-programozasba-a-weben-is-az-etterem-projekt)
+illetve a Facebokon a [dotnet cápák](https://www.facebook.com/groups/dotnetcapak/) csoportban
+netacadémia blog: http://netacademia.blog.hu/
 
 
