@@ -197,12 +197,17 @@ namespace Snake201806.Model
             }
 
 
-            ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+            var paintHead = ShowSnakeHead(snake.HeadPosition.RowPosition, snake.HeadPosition.ColumnPosition);
+
+            //mielőtt elmentjük az fejet azelőtt kell a régit törölni
+            EraseFromCanvas(snake.HeadPosition.Paint);
+
+            snake.HeadPosition.Paint = paintHead;
 
             //a kígyó fejébő nyak lesz, ennek megfelelően kell megjeleníteni
-            ShowSnakeNeck(neck.RowPosition, neck.ColumnPosition);
+            var paintNeck = ShowSnakeNeck(neck.RowPosition, neck.ColumnPosition);
             //viszont, a farok adataihoz a nyaknak hozzá kell adódnia.
-            snake.Tail.Add(new ArenaPosition(neck.RowPosition, neck.ColumnPosition));
+            snake.Tail.Add(new CanvasPosition(neck.RowPosition, neck.ColumnPosition, paintNeck));
 
             //amíg a kígyó hossza (Tail.Count) kevesebb, mint a kígyó hossza (Tail.Length) :)
             if (snake.Tail.Count < snake.Length)
@@ -215,7 +220,7 @@ namespace Snake201806.Model
                 //Az ábrán látszik, hogy a kígyó legvége mindig az első listaelem
                 var end = snake.Tail[0];
                 //meg kell jeleníteni erre az elemre a tábla rajzot (=eltüntetjük a tábláról)
-                ShowEmptyArenaPosition(end.RowPosition, end.ColumnPosition);
+                ShowEmptyArenaPosition(end.RowPosition, end.ColumnPosition, end.Paint);
                 //majd az adatok közül is töröljük
                 snake.Tail.RemoveAt(0);
             }
@@ -257,9 +262,10 @@ namespace Snake201806.Model
                     //A kitöltő szín legyen ugyanolyan piros, mint az almáé a Grid-en
                     paint.Fill = Brushes.Red;
                     break;
-                case VisibleElementTypesEnum.EmptyArenaPosition:
-                    paint.Fill = Brushes.Aquamarine;
-                    break;
+                //ilyen többé nem lesz, nem felülsatírozzuk a színt, hanem a childrenből töröljük
+                //case VisibleElementTypesEnum.EmptyArenaPosition:
+                //    paint.Fill = Brushes.Aquamarine;
+                //    break;
                 default:
                     break;
             }
@@ -342,15 +348,19 @@ namespace Snake201806.Model
             return paint;
         }
 
-        private UIElement ShowEmptyArenaPosition(int rowPosition, int columnPosition)
+        private void ShowEmptyArenaPosition(int rowPosition, int columnPosition, UIElement paint)
         {
             PaintOnGrid(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
+            EraseFromCanvas(paint);
 
-            //rajz a Canvas-on
-            var paint = PaintOnCanvas(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
+            //Itt már nem kell a Canvas megjelenítés, mert 
+            //nem felülrajzoljuk a dolgokat, hanem a Canvas.Children-ből törlünk.
 
-            //visszaküldjük ez utóbbit a törléshez
-            return paint;
+            ////rajz a Canvas-on
+            //var paint = PaintOnCanvas(rowPosition, columnPosition, VisibleElementTypesEnum.EmptyArenaPosition);
+
+            ////visszaküldjük ez utóbbit a törléshez
+            //return paint;
         }
 
         private FontAwesome.WPF.ImageAwesome GetImage(int rowPosition, int columnPosition)

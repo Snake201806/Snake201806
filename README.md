@@ -211,8 +211,8 @@ A kígyófarok vége   +-----------> ++ <-+                 +
 
 ### 4. Feladat
 - [ ] helyezzük át a fodds.Remove hívása elõtti ellenõrzést a Remove-ba, és az adja vissza, hogy: true=létezett és töröltem, false=nem létezik
-- [ ] az ismétlõdések kiszervezése
-- [ ] egy második megjelenítési típus befezetése (Canvas)
+- [X] az ismétlõdések kiszervezése
+- [X] egy második megjelenítési típus befezetése (Canvas)
 
 Tudnivalók
 - A Canvas megjelenítéskor egy Children gyûjteményben rögzíti a megjelenítendõ elemeket
@@ -260,7 +260,7 @@ Megoldási lehetõségek:
         - és mindig a végén a kígyó
 - Remove() : ehhez meg kell tartani az eredeti elemet
 
-  - [ ] Nyilván kell tudni tartani a kirajzolt elipsziseket a meglévõ adatok mellé
+  - [X] Nyilván kell tudni tartani a kirajzolt elipsziseket a meglévõ adatok mellé
 
 Osztályok leszármaztatása, létrehozás
 ```
@@ -297,11 +297,8 @@ Osztályok leszármaztatása, létrehozás
              ArenaPosition-t.
 ```
 
-
-
-
-  - [ ] vissza kell tudni kapni a kereséskor azt az elemet, amit éppen törölni szeretnénk
-  - [ ] így tudjuk majd törölni a kirajzolt elemet a Canvas.Childrenbõl
+  - [X] vissza kell tudni kapni a kereséskor azt az elemet, amit éppen törölni szeretnénk
+  - [X] így tudjuk majd törölni a kirajzolt elemet a Canvas.Childrenbõl
 
 
 

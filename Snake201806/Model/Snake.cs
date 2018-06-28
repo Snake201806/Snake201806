@@ -13,17 +13,20 @@ namespace Snake201806.Model
     {
         public Snake(int rowPosition, int columnPosition)
         {
-            HeadPosition = new ArenaPosition(rowPosition, columnPosition);
+            //ilyenkor még nincs megjelenítve semmi, így nincs ilyen adatunk, 
+            //így nem tudunk neki Paint-ot megadni.
+            //vagyis, jelezzük, hogy nincs adat, erre szolgál a null.
+            HeadPosition = new CanvasPosition(rowPosition, columnPosition, null);
             HeadDirection = SnakeHeadDirectionEnum.InPlace;
             Length = 6;
             //gondoskodom arról, hogy a lista változóm listát tartalmazzon, 
             //nehogy object reference null hibára fussunk
             //http://netacademia.blog.hu/tags/null_object_pattern
-            Tail = new List<ArenaPosition>();
+            Tail = new List<CanvasPosition>();
         }
 
         //tudnia kell, hogy hol van a kígyó feje
-        public ArenaPosition HeadPosition { get; set; }
+        public CanvasPosition HeadPosition { get; set; }
 
         //tudnia kell, hogy merre megy éppen
         public SnakeHeadDirectionEnum HeadDirection { get; set; }
@@ -34,7 +37,7 @@ namespace Snake201806.Model
         /// Ehhez nyilván kell tartanunk a kígyó farkának pontjait, 
         /// amit egy listában célszerű megtenni
         /// </summary>
-        public List<ArenaPosition> Tail { get; set; }
+        public List<CanvasPosition> Tail { get; set; }
 
         public int Length { get; set; }
 
